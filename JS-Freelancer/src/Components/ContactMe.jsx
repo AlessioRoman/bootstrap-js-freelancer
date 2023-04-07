@@ -25,6 +25,7 @@ function calculatePrice(e) {
     }
 
     finalPrice = checkDiscountedPrice(fullPrice, userDiscountCode).toFixed(2);
+    alert(finalPrice);
 
     document.getElementById("price-display").innerHTML += `
     <h3 className="text-white font-semibold text-lg my-5">
