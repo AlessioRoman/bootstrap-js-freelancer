@@ -23,8 +23,11 @@ function calculatePrice(event) {
             break;
     }
 
-    finalPrice = checkDiscountedPrice(fullPrice, userDiscountCode);
-    console.log(finalPrice)
+    finalPrice = checkDiscountedPrice(fullPrice, userDiscountCode).toFixed(2);
+    document.getElementById("price-container").innerHTML = `
+    <h3>Estimated price: ${finalPrice}&euro;</h3>
+    `
+
 }
 
 //CALCOLA SCONTO
