@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "./Components/Header";
+import Portfolio from "./Components/Portfolio";
 
 function App() {
     return (
@@ -22,6 +23,9 @@ function App() {
                             className="w-1/3 rounded-full"
                         />
                     </div>
+                </section>
+                <section>
+                    <Portfolio />
                 </section>
             </main>
         </div>
