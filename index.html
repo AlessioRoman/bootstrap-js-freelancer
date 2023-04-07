@@ -114,7 +114,7 @@
                 </div>
             </div>
 
-            <form class="pb-5">
+            <form class="pb-3" onsubmit="calculatePrice(event)">
                 <div class="row w-75 m-auto">
                     <div class="col-xs-12 col-md-6">
                         <div class="my-1">
@@ -133,21 +133,21 @@
                     <div class="col-xs-12 col-md-6">
                         <div class="my-1">
                             <label for="email" class="form-label">Email adress</label>
-                            <input type="text" class="form-control" id="email" placeholder="name@example.com">
+                            <input type="text" class="form-control" id="email" placeholder="name@example.com" required>
                         </div>
                     </div>
 
                     <div class="col-xs-12 col-md-6">
                         <div class="my-1">
                             <label for="hours" class="form-label">Hours Requested</label>
-                            <input type="text" class="form-control" id="hours" placeholder="Hours requested...">
+                            <input type="number" class="form-control" id="hours" placeholder="Hours requested..." required>
                         </div>
                     </div>
 
                     <div class="col-xs-12 col-md-6">
                         <div class="my-1">
                             <label for="work" class="form-label">Type of work</label>
-                            <select class="form-control" id="work">
+                            <select class="form-control" id="work" required>
                                 <option value="">Select the type of work</option>
                                 <option value="backend">Backend Development</option>
                                 <option value="frontend">Frontend Development</option>
@@ -171,12 +171,15 @@
                     </div>
 
                     <div class="col-xs-12">
-                        <div class="my-2 text-center">
-                            <button type="button" class="btn btn-warning">Send</button>
+                        <div class="mt-2 text-center">
+                            <button type="submit" id="submit-button" class="btn btn-warning">Send</button>
                         </div>
                     </div>
                 </div>
             </form>
+            <div id="price-container" class="text-center pb-3">
+
+            </div>
         </div>
 
     </footer>
