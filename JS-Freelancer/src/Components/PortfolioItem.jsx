@@ -7,10 +7,10 @@ function PortfolioItem({ title, imageUrl }) {
                     {title}
                 </h1>
                 <div className="flex justify-center gap-3 items-center">
-                    <button className="border border-grey px-2 py-1 rounded-lg bg-grey text-purpleBg">
+                    <button className="border shadow-xl px-2 py-1 rounded-lg bg-purpleText text-purpleBgAlt text-center font-semibold">
                         Preview
                     </button>
-                    <button className="border border-grey px-2 py-1 rounded-lg bg-grey text-purpleBg">
+                    <button className="border shadow-xl px-2 py-1 rounded-lg bg-purpleText text-purpleBgAlt text-center font-semibold">
                         Website
                     </button>
                 </div>

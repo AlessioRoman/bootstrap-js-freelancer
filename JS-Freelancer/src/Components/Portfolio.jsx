@@ -3,7 +3,7 @@ import projects from "./../data/projects";
 
 function Portfolio() {
     return (
-        <div className="flex justify-center flex-wrap gap-10 mx-80 mb-20">
+        <div className="flex justify-center flex-wrap gap-10 mx-80">
             {projects.map((project) => (
                 <PortfolioItem
                     key={project.title}

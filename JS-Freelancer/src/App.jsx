@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "./Components/Header";
 import Portfolio from "./Components/Portfolio";
+import ContactMe from "./Components/ContactMe";
 
 function App() {
     return (
@@ -28,6 +29,9 @@ function App() {
                     <Portfolio />
                 </section>
             </main>
+            <footer>
+                <ContactMe />
+            </footer>
         </div>
     );
 }
