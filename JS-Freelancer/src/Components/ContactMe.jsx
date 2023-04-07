@@ -26,12 +26,6 @@ function calculatePrice(e) {
 
     finalPrice = checkDiscountedPrice(fullPrice, userDiscountCode).toFixed(2);
     alert(finalPrice);
-
-    document.getElementById("price-display").innerHTML += `
-    <h3 className="text-white font-semibold text-lg my-5">
-        ${finalPrice} &euro;
-    </h3>
-    `;
 }
 
 //CONTROLLO IL CODICE SCONTO
@@ -121,7 +115,6 @@ function ContactMe() {
                         Submit
                     </button>
                 </form>
-                <div id="price-display"></div>
             </div>
         </div>
     );
